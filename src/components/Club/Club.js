@@ -8,9 +8,7 @@ const Club = () => {
 
   const handleAddCart = (person) => {
     const newCart = [...cart, person];
-    // console.log(person);
     setCart(newCart);
-    // console.log(newCart);
   };
 
   useEffect(() => {

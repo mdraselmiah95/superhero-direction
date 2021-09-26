@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Hero.css";
 const Hero = (props) => {
-  //   console.log(props);
   const { name, born, nationality, occupation, fields, earn, quote, img } =
     props.hero || {};
   const icon = <FontAwesomeIcon icon={faShoppingCart} />;

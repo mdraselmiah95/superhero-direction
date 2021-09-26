@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 const Cart = (props) => {
   const { cart } = props || {};
-  //   console.log(cart);
   const icon = <FontAwesomeIcon icon={faUser} />;
   const totalReducer = (previous, current) => previous + current.earn;
   const total = cart.reduce(totalReducer, 0);
