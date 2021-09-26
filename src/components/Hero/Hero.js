@@ -14,7 +14,9 @@ const Hero = (props) => {
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
             <p className="text-warning">{born}</p>
-            <p>From: {nationality}</p>
+            <p>
+              <span className="fw-bold">From:</span> {nationality}
+            </p>
             <p>{occupation}</p>
             <p>
               <span className="fw-bold">Creation: </span>

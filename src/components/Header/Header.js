@@ -10,7 +10,7 @@ const Header = () => {
         They are the Dreamer, Inventor, Creator, the designer who is the
         frontier in the modern world.
       </h4>
-      <h3 className="text-info">Price of Creation: 70000 Million</h3>
+      <h3 className="text-info fw-bolder">Price of Creation: 70000 Million</h3>
     </div>
   );
 };

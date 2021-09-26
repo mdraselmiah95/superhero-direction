@@ -10,7 +10,7 @@ const Cart = (props) => {
   return (
     <div className="bg-secondary rounded p-3">
       <h2 className="fs-4 text-center">
-        <span className="text-info">{icon} </span> Inventor: {cart.length}
+        <span className="text-primary">{icon} </span> Inventor: {cart.length}
       </h2>
       <h4 className="text-center">Cost:$ {total}</h4>
 
