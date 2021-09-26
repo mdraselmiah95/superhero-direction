@@ -8,8 +8,13 @@ const Club = () => {
   const [cart, setCart] = useState([]);
 
   const handleAddCart = (person) => {
-    const newCart = [...cart, person];
-    setCart(newCart);
+    const matching = cart.find((hero) => hero.name === person.name);
+    if (!matching) {
+      const newCart = [...cart, person];
+      setCart(newCart);
+    } else {
+      alert("Already added.");
+    }
   };
 
   useEffect(() => {

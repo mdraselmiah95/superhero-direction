@@ -16,7 +16,7 @@ const Cart = (props) => {
 
       <ul>
         {cart.map((person) => (
-          <li className="fw-bold text-warning" key={person.id}>
+          <li className="fw-bold text-warning" key={person.name}>
             {person.name}
           </li>
         ))}
