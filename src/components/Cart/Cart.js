@@ -1,19 +1,22 @@
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-
 const Cart = (props) => {
   const { cart } = props || {};
   //   console.log(cart);
-
+  const icon = <FontAwesomeIcon icon={faUser} />;
   const totalReducer = (previous, current) => previous + current.earn;
   const total = cart.reduce(totalReducer, 0);
   return (
-    <div>
-      <h2>Total: {cart.length}</h2>
-      <h4>Cost: {total}</h4>
+    <div className="bg-secondary rounded p-2">
+      <h2 className="fs-4">
+        <span className="text-info">{icon} </span> Inventor: {cart.length}
+      </h2>
+      <h4>Cost:$ {total}</h4>
 
       <ul>
         {cart.map((person) => (
-          <li>{person.name}</li>
+          <li key={person.id}>{person.name}</li>
         ))}
       </ul>
     </div>
