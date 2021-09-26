@@ -4,6 +4,7 @@ import React from "react";
 const Cart = (props) => {
   const { cart } = props || {};
   const icon = <FontAwesomeIcon icon={faUser} />;
+  //use reducer
   const totalReducer = (previous, current) => previous + current.earn;
   const total = cart.reduce(totalReducer, 0);
   return (

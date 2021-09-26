@@ -3,6 +3,7 @@ import Cart from "../Cart/Cart";
 import Hero from "../Hero/Hero";
 
 const Club = () => {
+  //destructuring
   const [heros, setHeros] = useState([]);
   const [cart, setCart] = useState([]);
 
