@@ -8,7 +8,7 @@ const Cart = (props) => {
   const totalReducer = (previous, current) => previous + current.earn;
   const total = cart.reduce(totalReducer, 0);
   return (
-    <div className="bg-secondary rounded p-2">
+    <div className="bg-secondary rounded p-3">
       <h2 className="fs-4">
         <span className="text-info">{icon} </span> Inventor: {cart.length}
       </h2>
@@ -16,7 +16,9 @@ const Cart = (props) => {
 
       <ul>
         {cart.map((person) => (
-          <li key={person.id}>{person.name}</li>
+          <li className="fw-bold text-warning" key={person.id}>
+            {person.name}
+          </li>
         ))}
       </ul>
     </div>
