@@ -9,10 +9,10 @@ const Cart = (props) => {
   const total = cart.reduce(totalReducer, 0);
   return (
     <div className="bg-secondary rounded p-3">
-      <h2 className="fs-4">
+      <h2 className="fs-4 text-center">
         <span className="text-info">{icon} </span> Inventor: {cart.length}
       </h2>
-      <h4>Cost:$ {total}</h4>
+      <h4 className="text-center">Cost:$ {total}</h4>
 
       <ul>
         {cart.map((person) => (
