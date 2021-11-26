@@ -9,8 +9,16 @@ const Hero = (props) => {
   return (
     <div className="col-lg-4 col-md-6">
       <div className="col">
-        <div className="card p-2 bg-secondary text-light text-center">
-          <img src={img} id="img" className="rounded" alt="programmer" />
+        <div
+          className="card p-2 bg-secondary text-light text-center"
+          style={{ height: "850px" }}
+        >
+          <img
+            src={img}
+            id="img"
+            className="rounded img-fluid"
+            alt="programmer"
+          />
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
             <p className="text-warning">{born}</p>

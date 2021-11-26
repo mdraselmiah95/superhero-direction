@@ -8,7 +8,7 @@ const Cart = (props) => {
   const totalReducer = (previous, current) => previous + current.earn;
   const total = cart.reduce(totalReducer, 0);
   return (
-    <div className="bg-secondary rounded p-3">
+    <div className="bg-secondary rounded p-3 mt-2">
       <h2 className="fs-4 text-center">
         <span className="text-primary">{icon} </span> Inventor: {cart.length}
       </h2>
